@@ -1,0 +1,13 @@
+@import 'common/mixin'; //миксины
+@import 'common/vars'; //переменные
+@import 'common/fonts'; //шрифты
+@import 'common/global'; //глобальные стили
+@import 'common/reset';
+@import 'common/libs'; //библиотеки
+
+@import 'components/nav-list'; //навигация
+@import 'components/contact'; //номер телефона
+@import 'components/info-socials'; //соц.сети
+
+@import 'section/header'; //хэдер
+/* @import 'sections/footer'; // футер */

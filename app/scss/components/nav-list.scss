@@ -1,0 +1,21 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-right: 44px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+  
+  &__link {
+    color: $WhiteSmoke;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $MangoTango;
+    }
+  }
+}

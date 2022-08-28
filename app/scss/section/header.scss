@@ -1,0 +1,17 @@
+.header {
+  background-color: $Nero;
+  
+  &__container {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 44px;
+  }
+
+  &__contact {
+    margin-right: 24px;
+  }
+}
