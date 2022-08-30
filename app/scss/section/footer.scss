@@ -1,0 +1,90 @@
+.footer {
+  padding: 80px 0;
+
+  &__wrapper {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__info-list {
+    margin-right: 80px;
+    display: grid;
+    grid-template-areas: 
+      "first second"
+      "third fourth";
+    gap: 24px 32px;
+  }
+
+  .contact {
+    &__link {
+      display: block;
+      color: $Whisper;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  &__label {
+    margin-right: 32px;
+    max-width: 315px;
+    width: 100%;
+  }
+
+  &__subscribetion {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    color: $white;
+  }
+
+  &__subscribetion-btn {
+    padding: 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    line-height: 1;
+    color: $white;
+    background-color: $SafetyOrange;
+  }
+
+  .nav-list {
+    margin-bottom: 32px;
+    margin-right: 0;
+    padding: 0;
+    font-size: 24px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__services-list {
+    display: flex;
+  }
+
+  &__services-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__service-item {
+    &--title {
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
