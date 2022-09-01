@@ -1,0 +1,51 @@
+.callcenter-section {
+  position: relative;
+  padding: 122px 0;
+  background-image: url('../images/section/callcenter-section/beuty-view.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 1px;
+  color: $Whisper;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(13, 13, 13, 0.93);
+  }
+
+  &__container {
+    z-index: 1;
+    position: relative;
+  }
+
+  &__picture {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 64px;
+    font-weight: 700;
+    color: $WhiteSmoke;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    max-width: 728px;
+    width: 100%;
+    font-size: 32px;
+  }
+
+  &__subtext {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}

@@ -19,7 +19,6 @@
   .contact {
     &__link {
       display: block;
-      color: $Whisper;
 
       &:not(:last-child) {
         margin-bottom: 12px;
@@ -47,11 +46,6 @@
 
   &__subscribetion-btn {
     padding: 16px;
-    border-radius: 100px;
-    font-size: 14px;
-    line-height: 1;
-    color: $white;
-    background-color: $SafetyOrange;
   }
 
   .nav-list {

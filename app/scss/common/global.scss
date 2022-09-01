@@ -56,3 +56,13 @@ body.hidden {
   overflow: hidden;
 }
 
+.btn {
+  padding: 24px 40px;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  color: $white;
+  background-color: $SafetyOrange;
+}
+
