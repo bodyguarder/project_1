@@ -1,0 +1,14 @@
+.products-section {
+  padding: 80px 0;
+  background-color: $WhiteSmoke;
+
+  &__title {
+    margin-bottom: 56px;
+  }
+
+  &__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 32px;
+  }
+}

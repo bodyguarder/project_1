@@ -1,0 +1,117 @@
+.products-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+
+  &__link {
+    margin-bottom: 24px;
+    padding: 24px;
+    display: block;
+    position: relative;
+    height: 240px;
+    ;
+    background-image: url('../images/components/products-card/buisness-card.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      border-radius: 16px;
+      background-color: rgba(23, 23, 23, 0.9);
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    &:hover {
+      & + .products-card__title,
+      & ~ .products-card__sublink,
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 24px;
+    color: $WhiteSmoke;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+
+  &__sublink {
+    position: absolute;
+    left: 24px;
+    top: 205px;
+    color: $WhiteSmoke;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+
+  &__link-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: $Nero-900;
+    letter-spacing: 1px;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $SafetyOrange;
+    }
+  }
+
+  &__link-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: $Nero-900;
+  }
+
+  &__link-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      &::after {
+        content: '•';
+        color: $MandysPink;
+      }
+    }
+  }
+
+  &__product-link {
+    padding-right: 8px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $SafetyOrange;
+    }
+  }
+
+  &__link-more {
+    display: flex;
+    align-items: center;
+
+    .arrows {
+      &__right {
+        margin-left: 4px;
+        padding: 4px;
+        border-color: $Nero-900;
+      }
+    }
+  }
+}
