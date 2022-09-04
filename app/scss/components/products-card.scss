@@ -12,7 +12,6 @@
     position: relative;
     height: 240px;
     ;
-    background-image: url('../images/components/products-card/buisness-card.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -31,8 +30,9 @@
     }
 
     &:hover {
-      & + .products-card__title,
-      & ~ .products-card__sublink,
+
+      &+.products-card__title,
+      &~.products-card__sublink,
       &::after {
         opacity: 1;
       }
@@ -43,6 +43,7 @@
     position: absolute;
     top: 24px;
     left: 24px;
+    pointer-events: none;
     font-size: 24px;
     color: $WhiteSmoke;
     opacity: 0;
@@ -54,6 +55,7 @@
     left: 24px;
     top: 205px;
     color: $WhiteSmoke;
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.2s linear;
   }
@@ -72,8 +74,10 @@
 
   &__link-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    row-gap: 16px;
     color: $Nero-900;
   }
 
@@ -103,14 +107,25 @@
   }
 
   &__link-more {
+    margin-top: auto;
     display: flex;
     align-items: center;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $SafetyOrange;
+
+      span {
+        border-color: $SafetyOrange;
+      }
+    }
 
     .arrows {
       &__right {
         margin-left: 4px;
         padding: 4px;
         border-color: $Nero-900;
+        transition: border-color 0.2s linear;
       }
     }
   }
