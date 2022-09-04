@@ -1,6 +1,10 @@
 .requestcall-section {
   padding: 80px 0;
 
+  &__container {
+    position: relative;
+  }
+
   &__title {
     margin-bottom: 24px;
     color: $WhiteSmoke;
@@ -12,5 +16,9 @@
     letter-spacing: 1px;
   }
 
-  
+  &__picture {
+    position: absolute;
+    right: 50px;
+    bottom: -80px;
+  }
 }
