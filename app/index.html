@@ -387,17 +387,21 @@
         <p class="requestcall-section__text">Давайте мы позвоним и бесплатно проконсультируем Вас?</p>
 
         <form class="requestcall-section__form info-form" action="#">
-          <div class="info-form__wrapper">
-            <label class="info-form__label" for="tel">Телефон</label>
-  
-            <input class="info-form__input" type="tel" id="tel" placeholder="Ваш номер телефона">
-          </div>
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Телефон</legend>
 
-          <div class="info-form__wrapper">
-            <label class="info-form__label" for="name">Имя</label>
+            <label class="sr-only" for="tel">Телефон</label>
+
+            <input class="info-form__input" type="tel" id="tel" placeholder="Ваш номер телефона">
+          </fieldset>
+
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Имя</legend>
+
+            <label class="sr-only" for="name">Имя</label>
 
             <input class="info-form__input" type="text" id="name" placeholder="Ваше имя">
-          </div>
+          </fieldset>
 
           <button class="requestcall-section__btn btn">Заказать звонок</button>
         </form>

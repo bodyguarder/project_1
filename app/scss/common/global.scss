@@ -12,8 +12,12 @@ body {
     sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
-  background-color: $Nero-900;
   color: $WhiteSmoke;
+  background-image: url('../images/section/callcenter-section/beuty-view.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body.hidden {

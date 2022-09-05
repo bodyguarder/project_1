@@ -1,5 +1,17 @@
 .requestcall-section {
+  position: relative;
   padding: 80px 0;
+
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(23, 23, 23, 0.93);
+  }
 
   &__container {
     position: relative;

@@ -3,27 +3,24 @@
   align-items: center;
   color: $Whisper;
 
-  &__wrapper {
+  &__fieldset {
     margin-right: 32px;
     max-width: 260px;
     width: 100%;
     position: relative;
+    border: 1px solid $Whisper;
+    border-radius: 100px;
   }
 
-  &__label {
+  &__legend {
     padding: 2px 4px;
-    position: absolute;
-    top: -7px;
-    left: 16px;
-    background-color: $Nero-900;
     font-size: 12px;
     letter-spacing: 0.4px;
   }
 
   &__input {
-    padding: 24px 32px;
     width: 100%;
-    border: 1px solid $Whisper;
+    padding: 24px 32px;
     border-radius: 100px;
     color: $Whisper;
 
