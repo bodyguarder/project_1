@@ -1,0 +1,66 @@
+.capabilities-section {
+  padding: 80px 0;
+  background-color: $WhiteSmoke;
+  color: $Nero;
+
+  &__title {
+    margin-bottom: 58px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 32px;
+  }
+
+  &__item {
+    padding-left: 64px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--dino-1 {
+      &::before {
+        background-image: url('../images/sprite.svg#dino-1');
+      }
+    }
+
+    &--dino-2 {
+      &::before {
+        background-image: url('../images/sprite.svg#dino-2');
+      }
+    }
+
+    &--dino-3 {
+      &::before {
+        background-image: url('../images/sprite.svg#dino-3');
+      }
+    }
+
+    &--dino-4 {
+      &::before {
+        background-image: url('../images/sprite.svg#dino-4');
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-size: 22px;
+    letter-spacing: 1%;
+  }
+
+  &__text {
+    line-height: 1.2;
+  }
+}
