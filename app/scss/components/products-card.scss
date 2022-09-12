@@ -108,7 +108,7 @@
 
   &__link-more {
     margin-top: auto;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     transition: color 0.2s linear;
 
@@ -128,5 +128,16 @@
         transition: border-color 0.2s linear;
       }
     }
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
   }
 }
