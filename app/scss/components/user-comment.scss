@@ -1,0 +1,16 @@
+.user-comment {
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  .apps-list {
+    &__link {
+      width: 75px;
+    }
+  }
+}

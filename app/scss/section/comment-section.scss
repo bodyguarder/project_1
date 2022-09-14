@@ -1,0 +1,19 @@
+.comment-section {
+  padding: 80px 0;
+  background-color: $WhiteSmoke;
+
+  &__header {
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-right: 32px;
+  }
+
+  &__comments-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
