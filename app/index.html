@@ -65,6 +65,7 @@
   <main class="main">
     <section class="callcenter-section">
       <div class="callcenter-section__container container">
+
         <h1 class="callcenter-section__title title">Мы уже напечатали то, о чём
           другие даже не думали</h1>
 
@@ -78,6 +79,40 @@
         <div class="callcenter-section__picture">
           <img class="callcenter-section__img" src="images/section/callcenter-section/dino.png" width="400" height="490"
             alt="раптор в шляпе">
+        </div>
+
+        <div class="popup">
+          <p class="popup__text">Пожалуйста, оставьте свой номер телефона
+            и наши специалисты свяжутся с вами</p>
+
+          <form class="popup__form info-form" action="#">
+            <fieldset class="info-form__fieldset">
+              <legend class="info-form__legend">Имя</legend>
+
+              <label class="sr-only" for="name">Имя</label>
+
+              <input class="info-form__input" type="text" id="name" placeholder="Ваше имя">
+            </fieldset>
+
+            <fieldset class="info-form__fieldset">
+              <legend class="info-form__legend">Телефон</legend>
+
+              <label class="sr-only" for="tel">Телефон</label>
+
+              <input class="info-form__input" type="tel" id="tel" placeholder="Ваш номер телефона">
+            </fieldset>
+          </form>
+
+          <button class="popup__btn btn">Заказать звонок</button>
+
+          <div class="popup__picture">
+            <img class="popup__img" src="images/components/popup/dino.png" width="170" height="120"
+              alt="маленький динозаврик">
+          </div>
+
+          <button class="popup__close-btn" style="background-image: url(images/sprite.svg#closer);">
+            <span class="sr-only">кнопка закрыть попап</span>
+          </button>
         </div>
       </div>
     </section>
