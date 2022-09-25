@@ -72,7 +72,14 @@
     }
   }
 
+  &__service-list {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
   &__service-item {
+    display: inline-block;
+
     &--title {
       line-height: 1.5;
       font-weight: 700;

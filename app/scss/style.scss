@@ -15,12 +15,14 @@
 @import 'components/user-comment'; // отзыв'node_modules/rateyo/src/jquery.rateyo.js' от клиентов
 @import 'components/popup'; // попап для заказа звонка
 
-@import 'section/header'; //хэдер
-@import 'section/callcenter-section'; // секция заказа звонка
-@import 'section/products-section'; // секция товаров и услуг
-@import 'section/requestcall-section'; // секция заказа звонка
-@import 'section/capabilities-section'; // секция наши возможности
-@import 'section/portfolio-section'; // секиця портфолио
-@import 'section/comment-section'; // секция Отзывы
-@import 'section/map-section'; // карта с 2ГИС
-@import 'section/footer'; // футер
+@import 'section/index/header'; //хэдер
+@import 'section/index/callcenter-section'; // секция заказа звонка
+@import 'section/index/products-section'; // секция товаров и услуг
+@import 'section/index/requestcall-section'; // секция заказа звонка
+@import 'section/index/capabilities-section'; // секция наши возможности
+@import 'section/index/portfolio-section'; // секиця портфолио
+@import 'section/index/comment-section'; // секция Отзывы
+@import 'section/index/map-section'; // карта с 2ГИС
+@import 'section/index/footer'; // футер
+
+@import 'section/cutaway-page/cutaway-page'; // страничка визиток

@@ -1,0 +1,61 @@
+.cutaway-page {
+  .footer {
+    padding: 80px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__box {
+      max-width: 1090px;
+      width: 100%;
+    }
+
+    &__subscribetion {
+      margin-bottom: 32px;
+    }
+
+    &__subscribetion-btn {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px 14px 8px;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__info-list {
+      gap: 32px 50px;
+    }
+
+    &__services-item {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  .info-socials {
+    &__link {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+}
